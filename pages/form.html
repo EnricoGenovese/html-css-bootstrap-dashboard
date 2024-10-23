@@ -102,13 +102,13 @@
             </div>
             <div class="col-12 col-lg-4 py-3">
                 <label for="isbn" class="form-label">Codice ISBN</label>
-                <input type="text" class="form-control" id="isbn" placeholder="ISBN 000-0-00-000000-0" required>
+                <input type="text" class="form-control" id="isbn" placeholder="ISBN 000-0-00-000000-0" minlength="22" maxlength="22" required>
             </div>
 
             <div class="col-12 py-3 border-bottom">
                 <label for="notes" class="form-label">Note</label>
                 <textarea rows="3" type="text" class="form-control" id="notes"
-                    placeholder="Inserisci eventuali note sul libro"></textarea>
+                    placeholder="Inserisci eventuali note sul libro" maxlength="255"></textarea>
             </div>
 
             <div class="col-12">
