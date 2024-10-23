@@ -21,37 +21,39 @@
 <body>
     <header class="position-sticky top-0 start-0 bg-dark">
         <nav class="navbar navbar-expand-lg  g-dark bottom body px-2 mb-4" data-bs-theme="dark"">
-            <div class="container-fluid">
-                <div>
-                    <a class="navbar-brand" href="./../bonus/index.html">
-                        <img src="./../img/duck.png" alt="Bootstrap" id="logo">
-                    </a>
-                </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <div class=" container-fluid">
+            <div>
+                <a class="navbar-brand" href="./../bonus/index.html">
+                    <img src="./../img/duck.png" alt="Bootstrap" id="logo">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./../bonus/index.html">Catalogo Libri</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Anagrafica Utenti</a>
-                  </li>
-                  <li class="nav-item" href="#">
-                    <a class="nav-link">Storico Prestiti</a>
-                  </li>
-                  <li class="nav-item" href="#">
-                    <a class="nav-link">Help</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./../bonus/index.html">Catalogo Libri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anagrafica Utenti</a>
+                    </li>
+                    <li class="nav-item" href="#">
+                        <a class="nav-link">Storico Prestiti</a>
+                    </li>
+                    <li class="nav-item" href="#">
+                        <a class="nav-link">Help</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2 bg-light text-dark" type="search" placeholder="Cerca..." aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    <input class="form-control me-2 bg-light text-dark" type="search" placeholder="Cerca..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Cerca</button>
                 </form>
-              </div>
             </div>
-          </nav>
+            </div>
+        </nav>
     </header>
     <main class="container-md px-md-5 my-4" id="add-book">
         <h1 class="pb-3">Nuovo Libro</h1>
@@ -64,8 +66,8 @@
             </div>
             <div class="col-6">
                 <label for="auth-last-name" class="form-label">Cognome Autore</label>
-                <input type="text" class="form-control" id="auth-last-name" value="" placeholder="Inserisci il nome dell'autore"
-                    name="auth-last-name" required>
+                <input type="text" class="form-control" id="auth-last-name" value=""
+                    placeholder="Inserisci il nome dell'autore" name="auth-last-name" required>
             </div>
             <div class="col-12">
                 <label for="title" class="form-label">Titolo</label>
@@ -73,13 +75,46 @@
                     placeholder="Inserisci il titolo del libro  - massimo 30 caratteri" maxlength="30" name="title"
                     required>
             </div>
+            </div>
+            <div class="col-lg-4 py-3">
+                <label for="genre" class="form-label">Genere</label>
+                <select name="genre" id="genre" class="form-select" required>
+                    <option value="" selected>Scegli il genere...</option>
+                    <option value="novel">Arte</option>
+                    <option value="novel">Avventura</option>
+                    <option value="novel">Azione</option>
+                    <option value="novel">Cinema</option>
+                    <option value="novel">Cucina</option>
+                    <option value="novel">Fantasy</option>
+                    <option value="novel">Giallo</option>
+                    <option value="novel">Horror</option>
+                    <option value="novel">Narrativa</option>
+                    <option value="novel">Romantico</option>
+                    <option value="novel">Sci-fi</option>
+                    <option value="novel">Storico</option>
+                    <option value="novel">Viaggi</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-lg-4 py-3">
+                <label for="year" class="form-label">Data di uscita</label>
+                <input type="date" class="form-control" id="date" name="year" required>
+            </div>
+            <div class="col-12 col-lg-4 py-3">
+                <label for="isbn" class="form-label">Codice ISBN</label>
+                <input type="text" class="form-control" id="isbn" placeholder="ISBN 000-0-00-000000-0" required>
+            </div>
+
+            <div class="col-12 py-3 border-bottom">
+                <label for="notes" class="form-label">Note</label>
+                <textarea rows="3" type="text" class="form-control" id="notes" placeholder="Inserisci eventuali note sul libro"></textarea>
+            </div>
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
