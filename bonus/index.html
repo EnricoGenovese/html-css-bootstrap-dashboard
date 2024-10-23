@@ -19,22 +19,39 @@
 </head>
 
 <body>
-    <header class="position-sticky top-0 start-0">
-        <nav class="container-fluid navbar navbar-expand-lg bg-dark bottom body px-2 mb-4" data-bs-theme="dark">
-            <div>
-                <a class="navbar-brand" href="#">
-                    <img src="./../img/duck.png" alt="Bootstrap" id="logo">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Catalgo Libri</a>
-                    <a class="nav-link" href="#">Anagrafica Utenti</a>
-                    <a class="nav-link" href="#">Storico Prestiti</a>
-                    <a class="nav-link" href="#">Help</a>
+    <header class="position-sticky top-0 start-0 bg-dark">
+        <nav class="navbar navbar-expand-lg  g-dark bottom body px-2 mb-4" data-bs-theme="dark"">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="./../img/duck.png" alt="Bootstrap" id="logo">
+                    </a>
                 </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Anagrafica Utenti</a>
+                  </li>
+                  <li class="nav-item" href="#">
+                    <a class="nav-link">Storico Prestiti</a>
+                  </li>
+                  <li class="nav-item" href="#">
+                    <a class="nav-link">Help</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 bg-light text-dark" type="search" placeholder="Cerca..." aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Cerca</button>
+                </form>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
     <main class="container-md">
         <div class="row">
@@ -308,7 +325,9 @@
                                         </h2>
                                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis exercitationem animi inventore explicabo consectetur earum voluptate dolorem ducimus minus dignissimos!</div>
+                                            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur
+                                                adipisicing elit. Perferendis exercitationem animi inventore explicabo
+                                                consectetur earum voluptate dolorem ducimus minus dignissimos!</div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -321,7 +340,9 @@
                                         </h2>
                                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quae. Consequuntur tempora quibusdam minima rerum impedit, aut eveniet labore rem.</div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Consectetur, quae. Consequuntur tempora quibusdam
+                                                minima rerum impedit, aut eveniet labore rem.</div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -334,7 +355,9 @@
                                         </h2>
                                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quas porro illum ipsa ab enim nam aliquid mollitia nisi corporis.</div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur,
+                                                adipisicing elit. Et quas porro illum ipsa ab enim nam aliquid mollitia
+                                                nisi corporis.</div>
                                         </div>
                                     </div>
                                 </div>
