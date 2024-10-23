@@ -7,3 +7,10 @@
     width: 12%;
 }
 
+h1 {
+    font-weight: 600;
+}
+
+#add-book label {
+    font-weight: 500;
+}
